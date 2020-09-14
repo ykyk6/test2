@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function rand(min, max) {
+    let array =[];
+    for (i = 0; i < 6; i++) {
+     array[i]= Math.round(Math.random() * (max - min)) + min;
+    
+    for(j=1;j<=i;j++){
+        if(array[i]==array[i-j]){
+            i--}
+            else{console.log(array[i])}
+            
+       
+       }
+    }document.write("A區1-38任選1數字:"+array) };
+    rand(1, 38)
+
+
+
+    function rand2(min,max){
+        let a=Math.round(Math.random()*(max-min))+min;
+        document.write("<br>B區1-8任選1數字:"+a) ;
+        // return a
+    }
+    rand2(1, 8)
+
+
+    </script>
+</body>
+</html>
